@@ -120,13 +120,53 @@ nav a {
     font-size: 1.6rem;
 }
 
-.main_title{
+/*intro 아래 내용*/
 
+.intro_main1{
+    display: inline;
+    float: left;
+    max-width: 50%;
+    height: auto;
+    margin-right: 20%;
 }
 
-.card_ballon{
-    background: url('이미지/intro_talk.png');
+.intro_main2{
+    display: inline;
+    float: right;
+    max-width: 50%;
+    height: auto;
+    margin-left: 20%;
 }
+
+.intro_main_t1{
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.intro_main_t1_2{
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.intro_main_t2{
+    font-size: 1.2rem;
+}
+
+.intro_main_t2_2{
+    font-size: 1.2rem;
+}
+
+
+.text_intro{
+    
+}
+
+.intro_main_img{
+    display: block;
+    align-items: center;
+    margin-right: 130px;
+}
+
 
 /* mobile  */
 @media screen and (max-width: 680px){

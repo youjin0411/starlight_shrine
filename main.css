@@ -85,6 +85,47 @@ nav a {
     text-align: center;
     font-size: 1.8rem;
     margin-top: 4.5rem;
+    margin-bottom: 3rem;
+}
+
+/* card */
+.main-card{
+    align-items: center;
+}
+
+.card {
+    margin: 0 auto; 
+    background: url("이미지/intro_card.png");
+    border-radius: 0.5rem; /*모퉁이가 둥굴게 */
+    flex: 1 0 240px; /*기본 240px이고 커지면 확장하자*/
+    max-width: 45%; /* 너무 넓지 않게 max 정하자  */
+    max-height: 30%;
+}   
+.card-image {
+    height: 0;
+    padding-bottom: 66.6666666667%; /*그림 비율 유지하며 확대/축소 : 160/240 */
+    /* height: 160px; */
+    /* background: url("이미지/intro_meat.png") left; */
+    border-radius: 1rem 1rem 0 0;
+    background-size: cover;
+}
+
+.card-title_p{
+    display: block;
+    line-height: 3rem;
+}
+
+.sup_title{
+    font-weight: lighter;
+    font-size: 1.6rem;
+}
+
+.main_title{
+
+}
+
+.card_ballon{
+    background: url('이미지/intro_talk.png');
 }
 
 /* mobile  */

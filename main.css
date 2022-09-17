@@ -188,10 +188,10 @@ nav a {
 /* footer */
 .grid-container{
     display: grid;
-    grid-template-columns: 50px repeat(2, 1fr);
-    max-width: 600px;
-    height: 400px;
-    color: coral;
+    grid-template-columns:repeat(2, 1fr);
+    max-width: 800px;
+    height: 100px;
+    color: black;
     
 }
 

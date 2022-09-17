@@ -121,6 +121,15 @@ nav a {
 }
 
 /*intro 아래 내용*/
+.intro_main_img{
+    display: flex;
+    align-items: center;
+    margin-right: 130px;
+    margin-bottom: 7%;
+}
+
+.intro_main_img2{
+}
 
 .intro_main1{
     display: inline;
@@ -141,6 +150,7 @@ nav a {
 .intro_main_t1{
     margin-bottom: 15px;
     font-size: 2rem;
+    margin-top: 13px;
 }
 
 .intro_main_t1_2{
@@ -150,21 +160,11 @@ nav a {
 
 .intro_main_t2{
     font-size: 1.2rem;
+    font-weight: 400;
 }
 
 .intro_main_t2_2{
     font-size: 1.2rem;
-}
-
-
-.text_intro{
-    
-}
-
-.intro_main_img{
-    display: block;
-    align-items: center;
-    margin-right: 130px;
 }
 
 

@@ -26,6 +26,9 @@ p{
     font-size: 1em;
 }
 
+b{
+    margin-left: 150px;
+}
 /* nav */
 .container {
     margin-left: 1rem;
@@ -193,7 +196,7 @@ nav a {
 .grid-container{
     margin-left: 80px;
     display: grid;
-    grid-template-columns:300px 600px;
+    grid-template-columns:300px 800px;
     max-width: 800px;
     height: 100px;
     color: black;

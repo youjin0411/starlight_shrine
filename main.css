@@ -142,6 +142,7 @@ nav a {
 }
 
 .intro_main_img{
+    margin-top: 160px;
     display: flex;
     align-items: center;
     margin-right: 130px;

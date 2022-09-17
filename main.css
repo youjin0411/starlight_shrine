@@ -147,6 +147,7 @@ nav a {
     flex-direction : row-reverse;
     align-items: center;
     margin-left: 130px;
+    margin-bottom: 10%;
 }
 
 .intro_main1{
@@ -182,6 +183,22 @@ nav a {
 
 .intro_main_t2_2{
     font-size: 1.2rem;
+}
+
+/* footer */
+.grid-container{
+    display: grid;
+    grid-template-columns: 50px repeat(2, 1fr);
+    max-width: 600px;
+    height: 400px;
+    color: coral;
+    
+}
+
+.gird-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* mobile  */

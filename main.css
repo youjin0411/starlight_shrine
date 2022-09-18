@@ -125,7 +125,37 @@ nav a {
   position: absolute;
   width: 150px;
   height: 100%;
-  background-image: url("이미지/intro_meat.png");
+  background-image: url("이미지/intro_meat1.png");
+  transition: width 0.4s;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.card .additional2 {
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  background-image: url("이미지/intro_meat2.png");
+  transition: width 0.4s;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.card .additional3 {
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  background-image: url("이미지/intro_meat3.png");
+  transition: width 0.4s;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.card .additional4 {
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  background-image: url("이미지/intro_meat4.png");
   transition: width 0.4s;
   overflow: hidden;
   z-index: 2;

@@ -126,6 +126,8 @@ nav a {
   width: 150px;
   height: 100%;
   background-image: url("이미지/intro_meat1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   transition: width 0.4s;
   overflow: hidden;
   z-index: 2;
@@ -135,6 +137,8 @@ nav a {
   position: absolute;
   width: 150px;
   height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-image: url("이미지/intro_meat2.png");
   transition: width 0.4s;
   overflow: hidden;
@@ -145,6 +149,8 @@ nav a {
   position: absolute;
   width: 150px;
   height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-image: url("이미지/intro_meat3.png");
   transition: width 0.4s;
   overflow: hidden;
@@ -155,58 +161,32 @@ nav a {
   position: absolute;
   width: 150px;
   height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-image: url("이미지/intro_meat4.png");
   transition: width 0.4s;
   overflow: hidden;
   z-index: 2;
 }
 
-.card.green .additional {
-  background: linear-gradient(#92bCa6, #A2CCB6);
-}
-
-
 .card:hover .additional {
   width: 100%;
   border-radius: 0 5px 5px 0;
 }
 
-.card .additional .user-card {
-  width: 150px;
-  height: 100%;
-  position: relative;
-  float: left;
+.card:hover .additional2 {
+  width: 100%;
+  border-radius: 0 5px 5px 0;
 }
 
-.card .additional .user-card::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 10%;
-  right: -2px;
-  height: 80%;
-  border-left: 2px solid rgba(0,0,0,0.025);*/
+.card:hover .additional3 {
+  width: 100%;
+  border-radius: 0 5px 5px 0;
 }
 
-.card .additional .user-card .level,
-.card .additional .user-card .points {
-  top: 15%;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 0.75em;
-  font-weight: bold;
-  background: rgba(0,0,0,0.15);
-  padding: 0.125rem 0.75rem;
-  border-radius: 100px;
-  white-space: nowrap;
-}
-
-.card .additional .user-card .points {
-  top: 85%;
-}
-
-.card .additional .user-card svg {
-  top: 50%;
+.card:hover .additional4 {
+  width: 100%;
+  border-radius: 0 5px 5px 0;
 }
 
 .card .additional .more-info {
@@ -216,7 +196,47 @@ nav a {
   height: 100%;
 }
 
+.card .additional2 .more-info {
+  width: 300px;
+  position: absolute;
+  left: 150px;
+  height: 100%;
+}
+
+.card .additional3 .more-info {
+  width: 300px;
+  position: absolute;
+  left: 150px;
+  height: 100%;
+}
+
+.card .additional4 .more-info {
+  width: 300px;
+  position: absolute;
+  left: 150px;
+  height: 100%;
+}
+
+
 .card .additional .more-info h1 {
+  color: #fff;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+
+.card .additional2 .more-info h1 {
+  color: #fff;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+
+.card .additional3 .more-info h1 {
+  color: #fff;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+
+.card .additional4 .more-info h1 {
   color: #fff;
   margin-bottom: 0;
   margin-top: 50px;
@@ -230,50 +250,46 @@ nav a {
   font-size: 1rem;
 }
 
+.card .additional2 .coords {
+  margin: 0 1rem;
+  margin-top: 50px;
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.card .additional3 .coords {
+  margin: 0 1rem;
+  margin-top: 50px;
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.card .additional4 .coords {
+  margin: 0 1rem;
+  margin-top: 50px;
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+}
 
 .card .additional .coords span + span {
   float: right;
 }
 
-.card .additional .stats {
-  font-size: 2rem;
-  display: flex;
-  position: absolute;
-  bottom: 1rem;
-  left: 1rem;
-  right: 1rem;
-  top: auto;
-  color: #fff;
+.card .additional2 .coords span + span {
+  float: right;
 }
 
-.card.green .additional .stats {
-  color: #325C46;
+.card .additional3 .coords span + span {
+  float: right;
 }
 
-.card .additional .stats > div {
-  flex: 1;
-  text-align: center;
+.card .additional4 .coords span + span {
+  float: right;
 }
 
-.card .additional .stats i {
-  display: block;
-}
-
-.card .additional .stats div.title {
-  font-size: 0.75rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.card .additional .stats div.value {
-  font-size: 1.5rem;
-  font-weight: bold;
-  line-height: 1.5rem;
-}
-
-.card .additional .stats div.value.infinity {
-  font-size: 2.5rem;
-}
 
 .card .general {
   width: 300px;
@@ -293,9 +309,6 @@ nav a {
   right: 1rem;
   font-size: 0.9em;
 }
-
-
-
 
 /*intro 아래 내용*/
 .intro_body_img{

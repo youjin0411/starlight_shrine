@@ -1,117 +1,33 @@
-<!DOCTYPE html>
+link<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../carousel/test.css">
-    <link rel="stylesheet" href="../main.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../carousel/test.css">
+  <title>Document</title>
 </head>
 <body>
- <div class="carousel">
-    <div class="carousel-inner">
-        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
-        <div class="carousel-item">
-              <div class="card">
-    <div class="additional">
-      <div class="more-info">
-        <h1>"나홀로"씨</h1>
-        <div class="coords">
-          <span>1인분씩 제공되는 고기로 혼밥을 즐길 수 있는 고기9282</span>
-        </div>
-      </div>
-    </div>
-    <div class="general">
-      <pre>                                                 2인분이 부담스러우셨던</pre>
-      <h1 class="card_h1">"나홀로"씨</h1>
-      <img src="이미지/intro_talk1.png" class="card1_img">
-    </div>
-  </div>
-        </div>
-        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-        <div class="carousel-item">
-              <div class="card">
-    <div class="additional2">
-      <div class="more-info">
-        <h1>"박막내"씨</h1>
-        <div class="coords">
-          <span>직접 구워주신 맛있는 고기가 나오는 고기9282</span>
-        </div>
-      </div>
-    </div>
-    <div class="general">
-      <pre>                                                                         고기굽기 당번</pre>
-      <h1 class="card_h1">"박막내"씨</h1>
-      <img src="이미지/intro_talk2.png" class="card1_img">
-    </div>
-  </div>
-        </div>
-        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-        <div class="carousel-item">
-              <div class="card">
-    <div class="additional3">
-      <div class="more-info">
-        <h1>"한슬로"씨</h1>
-        <div class="coords">
-          <span>고기가 1인분씩 밥상으로 나오는 고기9282</span>
-        </div>
-      </div>
-    </div>
-    <div class="general">
-      <pre>                                              돈을 같이 내는데 천천히 먹는</pre>
-      <h1 class="card_h1">"한슬로"씨</h1>
-      <img src="이미지/intro_talk3.png" class="card1_img">
-    </div>
-  </div>
-        </div>
-
-        <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
-        <div class="carousel-item">
-              <div class="card">
-    <div class="additional4">
-      <div class="more-info">
-        <h1>"김귀가"씨</h1>
-        <div class="coords">
-          <span>구워진 고기로, 옷에 냄새가 묻지 않는 고기9282</span>
-        </div>
-      </div>
-    </div>
-    <div class="general">
-      <pre>                                             고기를 먹고 집으로 돌아가는</pre>
-      <h1 class="card_h1">"김귀가"씨</h1>
-      <img src="이미지/intro_talk4.png" class="card1_img">
-    </div>
-  </div>
-        </div>
-        <label for="carousel-4" class="carousel-control prev control-1">‹</label>
-        <label for="carousel-2" class="carousel-control next control-1">›</label>
-
-        <label for="carousel-1" class="carousel-control prev control-2">‹</label>
-        <label for="carousel-3" class="carousel-control next control-2">›</label>
-
-        <label for="carousel-2" class="carousel-control prev control-3">‹</label>
-        <label for="carousel-4" class="carousel-control next control-3">›</label>
-
-        <label for="carousel-3" class="carousel-control prev control-4">‹</label>
-        <label for="carousel-1" class="carousel-control next control-4">›</label>          
-
-        <ol class="carousel-indicators">
-            <li>
-                <label for="carousel-1" class="carousel-bullet">•</label>
-            </li>
-            <li>
-                <label for="carousel-2" class="carousel-bullet">•</label>
-            </li>
-            <li>
-                <label for="carousel-3" class="carousel-bullet">•</label>
-            </li>
-            <li>
-                <label for="carousel-4" class="carousel-bullet">•</label>
-            </li>
-        </ol>
-    </div>
+<div class="content"> <!--전체를 감쌀 뼈대-->
+<div class="slides">  <!--슬라이드 아이템을 감쌀 뼈대-->
+  <div class="slide_item"></div>  <!--슬라이드될 아이템들 -->
+  <div class="slide_item"></div>
+  <div class="slide_item"></div>
+  <div class="slide_item"></div>
+  <div class="slide_item"></div>
+  <div class="slide_item"></div>
 </div>
-  <script src="../main.js"></script> 
+<span class="nextButton">▶</span>  <!--다음 버튼 -->
+<span class="prevButton">◀</span>   <!--이전 버튼 -->
+  <div class="Thumbnail">  <!--썸네일을 감쌀 뼈대 -->
+ <div class="thumbnail_item"></div>   <!--썸네일 아이템들 -->
+  <div class="thumbnail_item"></div>
+  <div class="thumbnail_item"></div>
+  <div class="thumbnail_item"></div>
+  <div class="thumbnail_item"></div>
+  <div class="thumbnail_item"></div>
+  </div> 
+</div>
+<script src="../carousel/test.js"></script>
 </body>
 </html>

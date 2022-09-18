@@ -90,42 +90,182 @@ nav a {
 /* 배너 글 */
 #title_text{
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2.2vw;
     margin-top: 4.5rem;
     margin-bottom: 3rem;
 }
 
 /* card */
-.main-card{
-    align-items: center;
-}
-
 .card {
-    margin: 0 auto; 
-    background: url("이미지/intro_card.png");
-    border-radius: 0.5rem; /*모퉁이가 둥굴게 */
-    flex: 1 0 240px; /*기본 240px이고 커지면 확장하자*/
-    max-width: 45%; /* 너무 넓지 않게 max 정하자  */
-    max-height: 30%;
-}   
-.card-image {
-    height: 0;
-    padding-bottom: 66.6666666667%; /*그림 비율 유지하며 확대/축소 : 160/240 */
-    /* height: 160px; */
-    /* background: url("이미지/intro_meat.png") left; */
-    border-radius: 1rem 1rem 0 0;
-    background-size: cover;
+  width: 450px;
+  height: 250px;
+  background-color: #fff;
+  background: linear-gradient(#f8f8f8, #fff);
+  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  margin: 1.5rem;
+}
+.card p{
+  text-align: center;
+  margin-top: 10px;
+}
+.card h1{
+  text-align: center;
 }
 
-.card-title_p{
-    display: block;
-    line-height: 3rem;
+.card1_img{
+    max-width: 16rem;
+    margin-top: 50px;
+    margin-left: 15px;
 }
 
-.sup_title{
-    font-weight: lighter;
-    font-size: 1.6rem;
+.card .additional {
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  background-image: url("이미지/intro_meat.png");
+  transition: width 0.4s;
+  overflow: hidden;
+  z-index: 2;
 }
+
+.card.green .additional {
+  background: linear-gradient(#92bCa6, #A2CCB6);
+}
+
+
+.card:hover .additional {
+  width: 100%;
+  border-radius: 0 5px 5px 0;
+}
+
+.card .additional .user-card {
+  width: 150px;
+  height: 100%;
+  position: relative;
+  float: left;
+}
+
+.card .additional .user-card::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10%;
+  right: -2px;
+  height: 80%;
+  border-left: 2px solid rgba(0,0,0,0.025);*/
+}
+
+.card .additional .user-card .level,
+.card .additional .user-card .points {
+  top: 15%;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: bold;
+  background: rgba(0,0,0,0.15);
+  padding: 0.125rem 0.75rem;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+.card .additional .user-card .points {
+  top: 85%;
+}
+
+.card .additional .user-card svg {
+  top: 50%;
+}
+
+.card .additional .more-info {
+  width: 300px;
+  position: absolute;
+  left: 150px;
+  height: 100%;
+}
+
+.card .additional .more-info h1 {
+  color: #fff;
+  margin-bottom: 0;
+  margin-top: 50px;
+}
+
+.card .additional .coords {
+  margin: 0 1rem;
+  margin-top: 50px;
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+}
+
+
+.card .additional .coords span + span {
+  float: right;
+}
+
+.card .additional .stats {
+  font-size: 2rem;
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  top: auto;
+  color: #fff;
+}
+
+.card.green .additional .stats {
+  color: #325C46;
+}
+
+.card .additional .stats > div {
+  flex: 1;
+  text-align: center;
+}
+
+.card .additional .stats i {
+  display: block;
+}
+
+.card .additional .stats div.title {
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card .additional .stats div.value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+.card .additional .stats div.value.infinity {
+  font-size: 2.5rem;
+}
+
+.card .general {
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-top: 0;
+}
+
+.card .general .more {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 0.9em;
+}
+
+
+
 
 /*intro 아래 내용*/
 .intro_body_img{
@@ -137,7 +277,7 @@ nav a {
     width: 1.5%;
     height: 50%;
     max-width: 10%;
-    top: 20%;
+    top: 30%;
     left: 50%;
 }
 
@@ -175,38 +315,94 @@ nav a {
 
 .intro_main_t1{
     margin-bottom: 15px;
-    font-size: 2rem;
+    font-size: 2.6vw;
     margin-top: 13px;
 }
 
 .intro_main_t1_2{
     margin-bottom: 15px;
-    font-size: 2rem;
+    font-size: 0.2vw;
 }
 
 .intro_main_t2{
-    font-size: 1.2rem;
+    font-size: 1.5vw;
     font-weight: 400;
 }
 
-.intro_main_t2_2{
-    font-size: 1.2rem;
-}
-
 /* footer */
-.grid-container{
-    margin-left: 80px;
-    display: grid;
-    grid-template-columns:300px 800px;
-    max-width: 800px;
-    height: 100px;
-    color: black;
-    
+.footer {
+  width: 100%; /* 넓이를 100%로 채우기 반응형 */
+  background-color: white;
+  padding: 10px 90px;
 }
 
-.gird-footer{
-    font-size: 1rem;
-    display: flex;
+.contain {
+  margin-left: 6vw;
+  display: flex;
+  justify-content: space-between;  
+}
+
+.footer .col {
+  align-items: center;
+  float: left;
+  column-gap: 40px; /*글자사이의 거리 */
+}
+
+.footer .col .social {
+  float: left;
+}
+
+.footer .col h1 {
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: #000;
+  /* footer 소제목 글씨 모양 */
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
+
+.footer .col ul {
+  list-style-type: none; /* • 모양 없애기 */
+}
+
+.footer .col ul li {
+  color: #000;
+  font-size: 0.5vw;
+  /*글자사이의 간격*/
+  padding: 6px 0px 6px 0px; 
+  cursor: pointer; /*cursor 마우스 커서 모양 뜨기 */
+  /*마우스 커서 시 색상 변하는 속도 조절 */
+  transition: 0.2s; 
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+}
+
+.social ul li {
+  display: inline-block;
+}
+ 
+i {
+  font-size: 1.1rem;
+}
+/*마우스커서 올릴 시 글자의 색상이 변함 */
+.footer .col ul li:hover {
+  color: darkslateblue;
+  transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+}
+
+/*마우스커서 올릴 시 글자의 색상이 변함 */
+.social ul li img :hover {
+  color: #fff;
+  transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+}
+
+.clearfix {
+  clear: both;
 }
 
 /* mobile  */

@@ -13,6 +13,7 @@ html {
     scroll-behavior: smooth;
 }
 
+html,body{ overflow-x: hidden; }
 ul {
     list-style: none;
 }
@@ -110,12 +111,25 @@ nav a {
   color: black;
 }
 
+.first-img{
+  height: 28vw;
+  width: 100%;
+  background: linear-gradient( rgba(0, 0, 0, 0.484), rgba(0, 0, 0, 0.516) ),
+    url("/이미지/introimg.jpg");
+    background-size: cover;
+}
+.intro-text > pre{
+    color: #fff;
+    font-size: 1.5vw;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', sans-serif;
+}
 
 /* 배너 글 */
 #title_text{
     text-align: center;
     font-size: 2.2vw;
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-bottom: 4rem;
 }
 
@@ -219,25 +233,30 @@ nav a {
   z-index: 2;
 }
 
-/* .card:hover .additional {
-  width: 100%;
-  border-radius: 0 5px 5px 0;
+.card_h1:hover{
+  color: #1f247c;
 }
 
-.card:hover .additional2 {
-  width: 100%;
-  border-radius: 0 5px 5px 0;
+.card .additional:hover{
+  background-image: url('../이미지/logo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
-.card:hover .additional3 {
-  width: 100%;
-  border-radius: 0 5px 5px 0;
+.card .additional2:hover{
+  background-image: url('../이미지/logo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
-.card:hover .additional4 {
-  width: 100%;
-  border-radius: 0 5px 5px 0;
-} */
+.card .additional3:hover{
+  background-image: url('../이미지/logo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card .additional4:hover{
+  background-image: url('../이미지/logo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .card .additional .more-info {
   width: 300px;
@@ -371,6 +390,12 @@ nav a {
   font-size: 0.9em;
 }
 
+.click{
+  width: 20%;
+  margin-top: 100%;
+  margin-left: 80%;
+}
+
 /*intro 아래 내용*/
 .intro_body_img{
     margin-top: -1rem;
@@ -435,7 +460,6 @@ nav a {
     font-size: 1.5vw;
     font-weight: 400;
 }
-
 /* carousel */
 .carousel {
     margin:0 auto;
@@ -541,6 +565,13 @@ nav a {
     color: #287eca;
 }
 
+.carousel{
+  transition: all 0.2s linear;
+}
+
+.carousel:hover {
+   transform: scale(1.2);
+}
 
 #title {
     width: 100%;
@@ -563,7 +594,8 @@ nav a {
 }
 
 .contain {
-  margin-left: 6vw;
+  /* margin-left: 6vw; */
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;  
 }
@@ -774,10 +806,12 @@ i {
 /*intro 아래 내용*/
 .intro_main_img{
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .intro_main_img2{
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .intro_main1{
@@ -785,7 +819,8 @@ i {
 }
 
 .intro_main2{
-  max-width: 100%;
+  max-width: 70%;
+  order: 2;
 }
 
 .parent{
@@ -793,23 +828,69 @@ i {
 }
 .intro_div{
   max-width: 100%;
-  margin-bottom: 30px;
   float: right;
-  margin-left: 80px;
 }
 
 .intro_main_t1{
   max-width: 100vw;
-  font-size: 1.5rem;
+  margin-top: 40px;
+  font-size: 1rem;
 }
 
 .intro_main_t1_2{
-  font-size: 2rem;
-  float: right;
+  font-size: 1rem;
+  margin-top: -120px;
 }
 
 .intro_main_t2{
-  font-size: 1rem;
+  font-size: 0.5rem;
   margin-bottom: 15px;
+}
+ .footer {
+    width: 100%; /* 넓이를 100%로 채우기 반응형 */
+    background-color: white;
+    padding: 10px;
+}
+
+.footer .col h1 {
+  font-size: 5px;
+  line-height: 5px;
+  padding: 20px 0px 5px 0px;
+  color: #000;
+  /* footer 소제목 글씨 모양 */
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
+
+.footer .col ul li {
+  color: #000;
+  font-size: 2px;
+  /*글자사이의 간격*/
+  padding: 0px 0px 4px 0px; 
+  cursor: pointer; /*cursor 마우스 커서 모양 뜨기 */
+  /*마우스 커서 시 색상 변하는 속도 조절 */
+  transition: 0.2s; 
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+}
+
+.contain{
+  gap: 20px;
+}
+
+.first-img{
+  height: 40vw;
+  max-width: 100%;
+  background: linear-gradient( rgba(0, 0, 0, 0.484), rgba(0, 0, 0, 0.516) ),
+    url("/이미지/introimg.jpg");
+    background-size: cover;
+}
+
+.intro-text > pre{
+  margin-right: 40px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-overflow : ellipsis
 }
 }

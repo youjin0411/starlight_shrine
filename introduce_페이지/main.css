@@ -115,8 +115,8 @@ nav a {
 #title_text{
     text-align: center;
     font-size: 2.2vw;
-    margin-top: 4.5rem;
-    margin-bottom: 6rem;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
 }
 
 .text{
@@ -373,7 +373,9 @@ nav a {
 
 /*intro 아래 내용*/
 .intro_body_img{
+    margin-top: -1rem;
     position:relative;
+    margin-bottom: -2rem;
 }
 
 .intro_content{
@@ -387,7 +389,7 @@ nav a {
 }
 
 .intro_main_img{
-    margin-top: 160px;
+    margin-top: 15vw;
     display: flex;
     align-items: center;
     margin-right: 130px;
@@ -438,9 +440,8 @@ nav a {
 .carousel {
     margin:0 auto;
     position: relative;
-    margin-top: 26px;
     width: 50vw;
-    height: 25vw;
+    height: 25vw; 
 }
 
 .carousel-inner {
@@ -629,19 +630,6 @@ i {
 .clearfix {
   clear: both;
 }
-
-/* mobile  */
-@media screen and (max-width: 720px){
-    /* 햄버거 메뉴 보이게 하기 */
-    .nav-toggle {
-        display: block; /*nav-toggle 즉, 밥 아이콘 제일 앞으로 */
-        position: absolute; /*nav-logo 가운데 정렬 */
-        cursor: pointer; /* 마우스 포인터: 손 => 토글에 가져 가면 마우스 커서 생성*/ 
-    }
-    .nav-logo {
-        /*밥 아이콘을 중앙 정렬 시켜서 아래에 있는 메뉴토글 버튼 보이게*/
-        margin: 0 auto; /*가운데 정렬*/
-    }
     /* mobile  */
 @media screen and (max-width: 720px){
     /* 햄버거 메뉴 보이게 하기 */
@@ -678,5 +666,150 @@ i {
     .show-menu {
         height: 180px;
     }
-  }
+    .card {
+      width: 80vw;
+      height: 45vw;
+      background-color: #fff;
+      background: linear-gradient(#f8f8f8, #fff);
+      box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+      border-radius: 6px;
+      overflow: hidden;
+      position: relative;
+      margin: 1.5rem;
+      display: flex;
+      margin:0 auto;
+      margin-top: 45px;
+    }
+
+    .card .additional {
+      position: absolute;
+      width: 30vw;
+      height: 100%;
+      background-image: url(../이미지/intro_meat1.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: width 0.4s;
+      overflow: hidden;
+      z-index: 2;
+    }
+    
+    .carousel {
+      margin:0 auto;
+      position: relative;
+      width: 80vw;
+      height: 25vw; 
+    } 
+    .intro_main_img{
+      margin-top: 205px;
+    }
+    #title_text{
+      text-align: center;
+      font-size: 4.2vw;
+      margin-top: 3.5rem;
+      margin-bottom: 2.4rem;
+    }
+
+    .text{
+      margin: 0 auto;
+      font-size: 4.2vw;
+    text-align: center;
+    display: inline; 
+    vertical-align: middle;
+    border-right: .05em solid black;
+    animation:  cursor 0.2s ease infinite;
+    }
+  .card1_img {
+      float: right;
+      max-width: 30vw;
+      height:10vw;
+      margin-top: 50px;
+    }
+
+  .intro_content{
+    margin-left: -0.1vw;
+    position:absolute;
+    width: 1.5%;
+    height: 50%;
+    max-width: 10%;
+    top: 24%;
+    left: 50%;
+    display: none;
+  } 
+  .card .additional2 {
+  position: absolute;
+  width: 30vw;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../이미지/intro_meat2.png");
+  transition: width 0.4s;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.card .additional3 {
+  position: absolute;
+  width: 30vw;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../이미지/intro_meat3.png");
+  transition: width 0.4s;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.card .additional4 {
+  position: absolute;
+  width: 30vw;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../이미지/intro_meat4.png");
+  transition: width 0.4s;
+  overflow: hidden;
+  z-index: 2;
+}
+
+/*intro 아래 내용*/
+.intro_main_img{
+  display: grid;
+}
+
+.intro_main_img2{
+  display: grid;
+}
+
+.intro_main1{
+  max-width: 100%;
+}
+
+.intro_main2{
+  max-width: 100%;
+}
+
+.parent{
+  max-width: 100%;
+}
+.intro_div{
+  max-width: 100%;
+  margin-bottom: 30px;
+  float: right;
+  margin-left: 80px;
+}
+
+.intro_main_t1{
+  max-width: 100vw;
+  font-size: 1.5rem;
+}
+
+.intro_main_t1_2{
+  font-size: 2rem;
+  float: right;
+}
+
+.intro_main_t2{
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
 }

@@ -161,7 +161,7 @@ nav a {
   margin-bottom: 5.5vw;
 }
 .TipText2 > h1{
-  font-size: 3vw;
+  font-size: 2.6vw;
   margin-top: 1rem;
 }
 
@@ -237,13 +237,35 @@ nav a {
   max-width: 80%;
 }
 
-.TipSourse{
-  border-radius: 0.5rem;
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.grid-item{
+    min-height: 150px;
+    max-width: 50%;
+    flex-basis: 16%;
+    flex-shrink: 1;
+    flex-grow: 1;
+    margin: 0 auto;
+}
+
+.grid-item > div > img{
   margin: 0 auto;
-  width: 60vw;
-  height: 30vw;
-  background-color: rgb(193, 193, 193);
-  margin-bottom: 8rem;
+  display: flex;
+  justify-content: center;
+  max-width: 15vw;
+}
+
+.grid-item > div > p{
+  background-color: #362e2b;
+  border-radius: 0.8rem;
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+  max-width: 50%;
+  margin: 0 auto;
 }
 
 /* footer */
@@ -405,3 +427,14 @@ i {
   margin-bottom: 2rem;
 }
   }
+
+@media screen and (max-width:1023px){
+    .grid-item{
+        flex-basis: 49%;
+    }
+}
+@media screen and (max-width:767px){
+    .grid-item{
+        flex-basis: 100%;
+    }
+}

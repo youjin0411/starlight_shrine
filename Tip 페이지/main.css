@@ -268,6 +268,97 @@ nav a {
   margin: 0 auto;
 }
 
+/* card 형식 */
+main {
+    display: flex; /*수평정렬*/
+    justify-content: center;
+    flex-wrap: wrap; /* 좁혀지면 하나씩 아래로 내려감  */
+    column-gap: 60px; /*열과 열 사이의 거리*/
+    row-gap: 40px;
+    margin: 44px 2rem; /*위아래 좌우 거리 주기 */
+}
+
+.card {
+    background-color: #f3f3f3;
+    border-radius: 1rem; /*모퉁이가 둥굴게 */
+    flex: 1 0 240px; /*기본 240px이고 커지면 확장하자*/
+    max-width: 300px; /* 너무 넓지 않게 max 정하자  */
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.now .card-time,
+.card:hover .card-time {
+    color: var(--third-color);
+}
+
+.card-image1{
+    height: 0;
+    padding-bottom: 66.6666666667%; /*그림 비율 유지하며 확대/축소 : 160/240 */
+    /* height: 160px; */
+    background: url("../이미지/menu1.png") center center;
+    border-radius: 1rem 1rem 0 0;
+    background-size: cover;
+}
+
+.card-image2{
+    height: 0;
+    padding-bottom: 66.6666666667%; /*그림 비율 유지하며 확대/축소 : 160/240 */
+    background: url("../이미지/menu2.png") center center;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    background-size: cover;
+}
+
+.card-image3{
+    height: 0;
+    padding-bottom: 66.6666666667%; /*그림 비율 유지하며 확대/축소 : 160/240 */
+    /* height: 160px; */
+    background: url("../이미지/menu3.png") center center;
+    border-radius: 1rem 1rem 0 0;
+    background-size: cover;
+}
+
+.card-description{
+    margin: 1rem;
+    margin-bottom: 4rem;
+}
+
+.card-title {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.card-context{
+  align-items: center;
+  margin: 0 auto;
+}
+
+.wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: -1rem;
+}
+
+.btn_open{
+  font-weight:bold; 
+  margin-right: 4vw;
+  padding:4px 6px; 
+  background:#000; 
+  color:#fff;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.pop_wrap{position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,.5); font-size:0; text-align:center;}
+.pop_wrap:after{display:inline-block; height:100%; vertical-align:middle; content:'';}
+.pop_wrap .pop_inner{display:inline-block; padding:20px 30px; background:#fff; width:200px; vertical-align:middle; font-size:15px;}
+
 /* footer */
 .footer {
   width: 100%; /* 넓이를 100%로 채우기 반응형 */

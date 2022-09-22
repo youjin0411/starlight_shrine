@@ -38,3 +38,5 @@ function typing(){
     }
 }
 setInterval(typing, 200)
+
+

@@ -17,4 +17,3 @@ const toggleMenu = (toggleId, navListId) => {
     }
 }
 toggleMenu("nav-toggle", "nav-list");
-

@@ -8,6 +8,11 @@
     padding: 0;
     font-family: 'Noto Sans KR', sans-serif;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 ul {
     list-style: none;
 }
@@ -92,8 +97,19 @@ nav a {
     background-color: #fff;
     color: #000;
     border-radius: 0.5rem;
-    width: 50px;
 }
+
+.nav-list .nav-item:nth-child(2){
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    border-radius: 0.5rem;
+}
+
+.nav-item:nth-child(2) .nav-link{
+  color: black;
+}
+
 
 /* 배너 글 */
 #title_text{
@@ -376,6 +392,7 @@ nav a {
     align-items: center;
     margin-right: 130px;
     margin-bottom: 5%;
+    position: relative;
 }
 
 .intro_main_img2{

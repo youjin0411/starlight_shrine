@@ -32,7 +32,7 @@ b{
 /* nav */
 /* nav */
 .container {
-    margin-left: 1rem;
+    margin-left: 2rem;
     margin-right: 1rem;
 }
 
@@ -111,8 +111,8 @@ nav a {
 #title_text{
     text-align: center;
     font-size: 2.2vw;
-    margin-top: 4.5rem;
-    margin-bottom: 6rem;
+    margin-top: 3.5rem;
+    margin-bottom: 5rem;
 }
 
 .text{
@@ -145,7 +145,7 @@ nav a {
 .full-website .ul{
   float: right;
     background-color: #444444;
-    width: 50%;
+    width: 70%;
     
 }
 .full-website .ul ul{
@@ -198,7 +198,7 @@ nav a {
 .full-website .container img{
     width: 40%;
     height: auto;
-    top: -40vw;
+    top: -60vw;
     float: left;
     margin-right: 3rem;
 }
@@ -420,16 +420,41 @@ nav a {
 }
 
 h5{
-    font-size: 2rem;
-    margin-top: 2rem;
+    font-size: 2vw;
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
+.btn{
+    border: 1px solid black;
+    border-radius: 0.1rem;
+}
+
+.btnres{
+    font-size: 1.2rem;
+}
+
+
+
+.review-btn{
+    background-color: #49735ff3;
+    color:#fff;
+    border-radius: 0.5rem;
+    border: 3px solid white;
+    max-width: 20vw;
+}
+
+.recordbtn{
+    border-radius: 0.5rem;
+    border: 3px solid white;
+    font-size: 0.1rem;
+}
+
 input{
-        margin: 0 auto;
-        width:200px;
-        height:100px;
-        font-size:20px;
+    margin: 0 auto;
+    width: 40%;
+    height: 35%;
+    font-size: 2vw;
 }
 
 .card{
@@ -444,6 +469,20 @@ input{
 .row justify-content-center{
     max-width: 100%;
     margin: 0 auto;
+}
+
+.clickme > li > a{
+    background-color: gainsboro;
+    margin-left: 45%;
+    margin-top: -50%;
+}
+
+.clickme{
+    margin: 0 auto;
+}
+
+li{
+    list-style: none;
 }
 
 /* footer */
@@ -598,5 +637,46 @@ i {
 
 .notice-h3{
     font-size: 0.7rem;
+}
+
+.full-website .container img {
+    width: 20%;
+    height: auto;
+    top: -60vw;
+    float: left;
+    margin-right: 3rem;
+}
+
+.full-website .mainblock .block3 {
+    width: 30%;
+    height: 200px;
+    background-color: #ecf0f1;
+    float: left;
+    margin-left: 10px;
+    cursor: pointer;
+    text-align: center;
+}   
+.list-group{
+    font-size: 1vw;
+}
+
+.review-btn{
+    background-color: #49735ff3;
+    color:#fff;
+    border-radius: 0.5rem;
+    border: 3px solid white;
+    max-width: 30vw;
+    font-size: 0.1rem;
+}
+
+.text-resutl{
+    font-size: 0.8vw;
+}
+
+input{
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    font-size: 0.2vw;
 }
   }

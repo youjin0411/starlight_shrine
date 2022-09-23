@@ -100,3 +100,7 @@ function dataCancel(e) {
 }
 
 todolist.addEventListener("click", dataCancel, false);
+
+function newPage()  {
+  location.href = 'review.html'
+}

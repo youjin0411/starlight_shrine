@@ -1,0 +1,203 @@
+body{
+    width: 100%;
+    height:100%;
+}
+.content{
+    height:100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sig-menu, .add-menu{
+    width:80%;
+}
+.sig-menu>h1, .add-menu>h1{
+    text-align: center;
+    padding:30px 0 30px 0;
+}
+.line{
+    width:100%;
+    border-bottom: solid 2px #777;
+}
+.sig-menu-img{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+    padding:40px 0 20px 0;
+}
+.set-list{
+    width: 23.5%;
+    height: 240px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #666;
+}
+.set-list:hover{
+    cursor:pointer;
+}
+.sig-menu-text-wrap{
+    width:340px;
+    height:fit-content;
+    padding-bottom: 60px;;
+    padding-left: 10px;
+}
+.sig-menu-text{
+    display: flex;
+    justify-content: space-between;
+}
+.naver-reservation-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:80%;
+}
+.naver-reservation-menu>h1{
+    text-align: center;
+    padding:30px 0 50px 0;
+}
+.grid-wrap{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    justify-items: end;
+}
+.grid-item-menu{
+    width:80%;
+    margin-bottom: 30px;
+}
+.grid-item-menu>img{
+    border-radius: 100%;
+    box-shadow: 0 0 10px #666;
+}
+.grid-item-menu-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:30px 0 50px 0;
+}
+.grid-item-menu-text>p{
+    text-align: center;
+}
+.menu-img{
+    width:90%;   
+}
+.grid-item-menu:hover{
+    cursor: pointer;
+}
+.set-list>img{
+    object-fit: cover;
+}
+.list-img1{
+    background-image: url("/img/set-menu/Mask group.jpg");
+    background-size:cover;
+}
+.list-img2{
+    background-image: url("/img/set-menu/Mask group-1.jpg");
+    background-size:cover;
+}
+.list-img3{
+    background-image: url("/img/set-menu/Mask group-2.jpg");
+    background-size:cover;
+}
+.list-img4{
+    background-image: url("/img/set-menu/Mask group-3.jpg");
+    background-size:cover;
+}
+.add-menu{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    justify-items: left;
+}
+.market-menu-item{
+    padding-bottom:10px;
+    height:fit-content;
+}
+.market-menu-item>h2{
+    margin-bottom: 5px;
+}
+.market-menu-item h3{
+    margin-top:5px;
+}
+.market-menu-item:nth-child(1){
+    grid-row: span 3;
+}
+
+/* footer */
+.footer {
+    width: 100%; /* 넓이를 100%로 채우기 반응형 */
+    background-color: white;
+    padding: 10px 90px;
+  }
+  
+  .contain {
+    margin-left: 6vw;
+    display: flex;
+    justify-content: space-between;  
+  }
+  
+  .footer .col {
+    align-items: center;
+    float: left;
+    column-gap: 40px; /*글자사이의 거리 */
+  }
+  
+  .footer .col .social {
+    float: left;
+  }
+  
+  .footer .col h1 {
+    font-size: 12px;
+    line-height: 17px;
+    padding: 20px 0px 5px 0px;
+    color: #000;
+    /* footer 소제목 글씨 모양 */
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+  }
+  
+  .footer .col ul {
+    list-style-type: none; /* • 모양 없애기 */
+  }
+  
+  .footer .col ul li {
+    color: #000;
+    font-size: 0.5vw;
+    /*글자사이의 간격*/
+    padding: 6px 0px 6px 0px; 
+    cursor: pointer; /*cursor 마우스 커서 모양 뜨기 */
+    /*마우스 커서 시 색상 변하는 속도 조절 */
+    transition: 0.2s; 
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+  }
+  
+  .social ul li {
+    display: inline-block;
+  }
+   
+  i {
+    font-size: 1.1rem;
+  }
+  /*마우스커서 올릴 시 글자의 색상이 변함 */
+  .footer .col ul li:hover {
+    color: darkslateblue;
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+  }
+  
+  /*마우스커서 올릴 시 글자의 색상이 변함 */
+  .social ul li img :hover {
+    color: #fff;
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+  }
+  
+  .clearfix {
+    clear: both;
+  }
+
+  

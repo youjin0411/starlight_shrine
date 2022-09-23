@@ -241,6 +241,7 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+    margin-bottom: 2rem;
 }
 .grid-item{
     min-height: 150px;
@@ -256,6 +257,10 @@ nav a {
   display: flex;
   justify-content: center;
   max-width: 15vw;
+}
+
+.grid-item > div > img:hover {
+	transform: rotate( -45deg );
 }
 
 .grid-item > div > p{
@@ -276,6 +281,7 @@ main {
     column-gap: 60px; /*열과 열 사이의 거리*/
     row-gap: 40px;
     margin: 44px 2rem; /*위아래 좌우 거리 주기 */
+    margin-bottom: 5rem;
 }
 
 .card {

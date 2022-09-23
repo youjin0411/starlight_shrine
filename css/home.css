@@ -10,7 +10,7 @@
       rgba(255, 255, 255, 0.75) 75%,
       rgba(255, 255, 255, 1) 100%
     ),
-    url("/img/Mask group.png");
+    url("../img/Mask group.png");
 }
 .in-img{
   width:100%;
@@ -68,19 +68,19 @@ video{
     box-shadow: 3px 3px 12px #999;
 }
 .inner1{
-  background-image: url("./img/home-img-list/Rectangle 36.png");
+  background-image: url("../img/home-img-list/Rectangle 36.png");
   background-size: cover;
 }
 .inner2{
-  background-image: url("./img/home-img-list/Rectangle 33.png");
+  background-image: url("../img/home-img-list/Rectangle 33.png");
   background-size: cover;
 }
 .inner3{
-  background-image: url("./img/home-img-list/Rectangle 34.png");
+  background-image: url("../img/home-img-list/Rectangle 34.png");
   background-size: cover;
 }
 .inner4{
-  background-image: url("/img/home-img-list/Rectangle 35.png");
+  background-image: url("../img/home-img-list/Rectangle 35.png");
   background-size: cover;
 }
 .img-wrap-inner:hover{

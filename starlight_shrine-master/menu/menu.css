@@ -89,19 +89,19 @@ body{
     object-fit: cover;
 }
 .list-img1{
-    background-image: url("/img/set-menu/Mask group.jpg");
+    background-image: url("../img/set-menu/Mask group.jpg");
     background-size:cover;
 }
 .list-img2{
-    background-image: url("/img/set-menu/Mask group-1.jpg");
+    background-image: url("../img/set-menu/Mask group-1.jpg");
     background-size:cover;
 }
 .list-img3{
-    background-image: url("/img/set-menu/Mask group-2.jpg");
+    background-image: url("../img/set-menu/Mask group-2.jpg");
     background-size:cover;
 }
 .list-img4{
-    background-image: url("/img/set-menu/Mask group-3.jpg");
+    background-image: url("../img/set-menu/Mask group-3.jpg");
     background-size:cover;
 }
 .add-menu{

@@ -68,15 +68,15 @@ video{
     box-shadow: 3px 3px 12px #999;
 }
 .inner1{
-  background-image: url("/img/home-img-list/Rectangle 36.png");
+  background-image: url("./img/home-img-list/Rectangle 36.png");
   background-size: cover;
 }
 .inner2{
-  background-image: url("/img/home-img-list/Rectangle 33.png");
+  background-image: url("./img/home-img-list/Rectangle 33.png");
   background-size: cover;
 }
 .inner3{
-  background-image: url("/img/home-img-list/Rectangle 34.png");
+  background-image: url("./img/home-img-list/Rectangle 34.png");
   background-size: cover;
 }
 .inner4{

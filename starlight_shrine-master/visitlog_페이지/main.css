@@ -157,7 +157,7 @@ nav a {
 .full-website .ul ul li a{
    color: white;
    text-decoration: none;
-   font-size: 1rem;
+   font-size: 1.5rem;
    margin-right: 25px;
 }
 .full-website .ul ul li a:hover{
@@ -469,6 +469,7 @@ input{
 .row justify-content-center{
     max-width: 100%;
     margin: 0 auto;
+    max-height: auto;
 }
 
 .clickme > li > a{

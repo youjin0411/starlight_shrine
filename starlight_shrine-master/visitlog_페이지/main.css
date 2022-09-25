@@ -210,7 +210,6 @@ nav a {
 .full-website .container p{
     margin-top: 50px;
     margin-left: 10px;
-
 }
 
 /* Notice section */
@@ -240,6 +239,7 @@ nav a {
 
 .full-website .mainblock{
     margin: 0 auto;
+    margin-top: -8vw;
 }
 
 /* block1 section */
@@ -341,9 +341,6 @@ nav a {
     cursor: pointer;
     color: white;
 }
-.footer2{
-
-}
 .footer2 h2{
     width: 30%;
     padding-bottom: 40px;
@@ -441,13 +438,15 @@ h5{
     color:#fff;
     border-radius: 0.5rem;
     border: 3px solid white;
-    max-width: 20vw;
+    max-width: 40vw;
+    max-height: 30vw;
+    font-size: 2vw;
 }
 
 .recordbtn{
     border-radius: 0.5rem;
     border: 3px solid white;
-    font-size: 0.1rem;
+    font-size: 1.2rem;
 }
 
 input{
@@ -562,8 +561,11 @@ i {
   clear: both;
 }
 
+span{
+    font-size: 1.2rem;
+}
 /* mobile  */
-@media screen and (max-width: 720px){
+@media screen and (max-width: 728px){
     /* 햄버거 메뉴 보이게 하기 */
     .nav-toggle {
         display: block; /*nav-toggle 즉, 밥 아이콘 제일 앞으로 */
@@ -598,6 +600,58 @@ i {
     .show-menu {
         height: 180px;
     }
+
+    span{
+    font-size: 0.8rem;
+}
+
+.card{
+   position: static;
+}
+
+.full-website .mainblock{
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+h5{
+    font-size: 5vw;
+    margin-bottom: 1rem;
+}
+
+#title_text{
+    text-align: center;
+    font-size: 2.2vw;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.block1 {
+    background-image: url(../이미지/intro_meat1.png);
+    background-size: cover;
+    max-width: 25%;
+    max-height: auto;
+    border-radius: 0.5rem;
+    opacity: 0.6;
+    margin-right: -1rem;
+}
+
+.btn{
+    border: 1px solid black;
+    border-radius: 0.1rem;
+    font-size: 1rem;
+}
+
+.text{
+  margin: 0 auto;
+  font-size: 3.4vw;
+  text-align: center;
+  display: inline; 
+  vertical-align: middle;
+  border-right: .05em solid black;
+  animation:  cursor 0.2s ease infinite;
+}
+
     .footer {
     width: 100%; /* 넓이를 100%로 채우기 반응형 */
     background-color: white;
@@ -628,8 +682,22 @@ i {
 .full-website .ul ul li a{
    color: white;
    text-decoration: none;
-   font-size: 0.4rem;
+   font-size: 0.9rem;
    margin-right: 25px;
+}
+
+.full-website .container{
+    top: -50%;
+    position: relative;
+    top: -20%;
+}
+.full-website .ul {
+    float: right;
+    background-color: #444444;
+    width: 100%;
+}
+card-header{
+    margin-top: 100rem;
 }
 
 .notice-h2{
@@ -641,10 +709,12 @@ i {
 }
 
 .full-website .container img {
-    width: 20%;
+    display: flex;
+    margin-bottom: auto;
+    margin-top: -10%;
+    width: 90%;
     height: auto;
-    top: -60vw;
-    float: left;
+    top: -100vw;
     margin-right: 3rem;
 }
 
@@ -667,17 +737,25 @@ i {
     border-radius: 0.5rem;
     border: 3px solid white;
     max-width: 30vw;
-    font-size: 0.1rem;
+    font-size: 1rem;
 }
 
 .text-resutl{
-    font-size: 0.8vw;
+    font-size: 3vw;
+}
+
+
+.text-resut2{
+    font-size: 1vw;
+    margin-top: -0.1vw; 
+    font-weight: 100; 
+    color: #4f4f4f;
 }
 
 input{
     margin: 0 auto;
-    width: 50%;
-    height: 50%;
-    font-size: 0.2vw;
+    width: 70%;
+    height: auto;
+    font-size: 4vw;
 }
   }

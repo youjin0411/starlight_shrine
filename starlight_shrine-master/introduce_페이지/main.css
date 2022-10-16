@@ -9,7 +9,6 @@
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
@@ -663,244 +662,241 @@ i {
 .clearfix {
   clear: both;
 }
-    /* mobile  */
+
 @media screen and (max-width: 680px){
-    /* 햄버거 메뉴 보이게 하기 */
-    .nav-toggle {
-        display: block; /*nav-toggle 즉, 밥 아이콘 제일 앞으로 */
-        position: absolute; /*nav-logo 가운데 정렬 */
-        cursor: pointer; /* 마우스 포인터: 손 => 토글에 가져 가면 마우스 커서 생성*/ 
-    }
-    .nav-logo {
-        /*밥 아이콘을 중앙 정렬 시켜서 아래에 있는 메뉴토글 버튼 보이게*/
-        margin: 0 auto; /*가운데 정렬*/
-    }
-    /* nav의 글자 햄버거 메뉴 안으로 수직으로 flex 방향 바꾸기 */
-    .nav-list {
-        flex-direction: column; /*수직*/
-        position: absolute; /* 원래 있던 자리의 (0,0)위치 */
-        left: 0; /* 왼쪽 정렬 */
-        right: 0; /* 넓이를 100%로 채움 */
-        top: 44px; /* nav높이 -> top높이 부분을 nav아래로 맞춘다. */
-        width: 100%;
-        background-color: #2f2f2f;
-        /* display: none; toggle 버튼이 안 보이게 하도록 toggle nav바가  */
-        /* 영역에 넘쳐나가게 되면 아예 보이지 않게 감추는 것 */
-        height: 0; /*overflow: hidden과 함께 메뉴 안 보이게 하자*/
-        overflow: hidden;
-        transition: 0.3s;
-    }
-    .nav-item{
-        /* nav 메뉴 글자 사이의 위아래 여백 주기*/
-        padding: 0.5rem 0;
-        border-bottom: 1px solid #fff;
-        text-align: center; /* 글자 가운데 정렬 */
-    }
-    .show-menu {
-        height: 180px;
-    }
+  /* 햄버거 메뉴 보이게 하기 */
+  .nav-toggle {
+      display: block; /*nav-toggle 즉, 밥 아이콘 제일 앞으로 */
+      position: absolute; /*nav-logo 가운데 정렬 */
+      cursor: pointer; /* 마우스 포인터: 손 => 토글에 가져 가면 마우스 커서 생성*/ 
+  }
+  .nav-logo {
+      /*밥 아이콘을 중앙 정렬 시켜서 아래에 있는 메뉴토글 버튼 보이게*/
+      margin: 0 auto; /*가운데 정렬*/
+  }
+  /* nav의 글자 햄버거 메뉴 안으로 수직으로 flex 방향 바꾸기 */
+  .nav-list {
+      flex-direction: column; /*수직*/
+      position: absolute; /* 원래 있던 자리의 (0,0)위치 */
+      left: 0; /* 왼쪽 정렬 */
+      right: 0; /* 넓이를 100%로 채움 */
+      top: 44px; /* nav높이 -> top높이 부분을 nav아래로 맞춘다. */
+      width: 100%;
+      background-color: #2f2f2f;
+      /* display: none; toggle 버튼이 안 보이게 하도록 toggle nav바가  */
+      /* 영역에 넘쳐나가게 되면 아예 보이지 않게 감추는 것 */
+      height: 0; /*overflow: hidden과 함께 메뉴 안 보이게 하자*/
+      overflow: hidden;
+      transition: 0.3s;
+  }
+  .nav-item{
+      /* nav 메뉴 글자 사이의 위아래 여백 주기*/
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #fff;
+      text-align: center; /* 글자 가운데 정렬 */
+  }
+  .show-menu {
+      height: 180px;
+  }
 
-    .intro-text > pre{
-    color: #fff;
-    font-size: 2.2vw;
-    font-weight: 400;
-    font-family: 'Noto Sans KR', sans-serif;
+  .intro-text > pre{
+  color: #fff;
+  font-size: 2.2vw;
+  font-weight: 400;
+  font-family: 'Noto Sans KR', sans-serif;
 }
-    .card {
-      width: 80vw;
-      height: 45vw;
-      background-color: #fff;
-      background: linear-gradient(#f8f8f8, #fff);
-      box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
-      border-radius: 6px;
-      overflow: hidden;
-      position: relative;
-      margin: 1.5rem;
-      display: flex;
-      margin:0 auto;
-      margin-top: 45px;
-    }
+  .card {
+    width: 80vw;
+    height: 45vw;
+    background-color: #fff;
+    background: linear-gradient(#f8f8f8, #fff);
+    box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    margin: 1.5rem;
+    display: flex;
+    margin:0 auto;
+    margin-top: 45px;
+  }
 
-    .card .additional {
-      position: absolute;
-      width: 30vw;
-      height: 100%;
-      background-image: url(../이미지/intro_meat1.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      transition: width 0.4s;
-      overflow: hidden;
-      z-index: 2;
-    }
-    
-    .carousel {
-      margin:0 auto;
-      position: relative;
-      width: 80vw;
-      height: 25vw; 
-      margin-top: -10vw;
-    } 
-    .intro_main_img{
-      margin-top: 205px;
-    }
-    #title_text{
-      text-align: center;
-      font-size: 5vw;
-      margin-top: 3.5rem;
-      margin-bottom: 2.4rem;
-    }
-
-    .text{
-      margin: 0 auto;
-      font-size: 5vw;
-      text-align: center;
-      display: inline; 
-      vertical-align: middle;
-      border-right: .05em solid black;
-      animation:  cursor 0.2s ease infinite;
-    }
-  .card1_img {
-      float: right;
-      max-width: 30vw;
-      height:10vw;
-      margin-top: 50px;
-    }
-
-  .intro_content{
-    margin-left: -0.1vw;
-    position:absolute;
-    width: 1.5%;
-    height: 50%;
-    max-width: 10%;
-    top: 24%;
-    left: 50%;
-    display: none;
+  .card .additional {
+    position: absolute;
+    width: 30vw;
+    height: 100%;
+    background-image: url(../이미지/intro_meat1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: width 0.4s;
+    overflow: hidden;
+    z-index: 2;
+  }
+  
+  .carousel {
+    margin:0 auto;
+    position: relative;
+    width: 80vw;
+    height: 25vw; 
+    margin-top: -10vw;
   } 
-  .card .additional2 {
-  position: absolute;
-  width: 30vw;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../이미지/intro_meat2.png");
-  transition: width 0.4s;
-  overflow: hidden;
-  z-index: 2;
+  .intro_main_img{
+    margin-top: 205px;
+  }
+  #title_text{
+    text-align: center;
+    font-size: 5vw;
+    margin-top: 3.5rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .text{
+    margin: 0 auto;
+    font-size: 5vw;
+    text-align: center;
+    display: inline; 
+    vertical-align: middle;
+    border-right: .05em solid black;
+    animation:  cursor 0.2s ease infinite;
+  }
+.card1_img {
+    float: right;
+    max-width: 30vw;
+    height:10vw;
+    margin-top: 50px;
+  }
+
+.intro_content{
+  margin-left: -0.1vw;
+  position:absolute;
+  width: 1.5%;
+  height: 50%;
+  max-width: 10%;
+  top: 24%;
+  left: 50%;
+  display: none;
+} 
+.card .additional2 {
+position: absolute;
+width: 30vw;
+height: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+background-image: url("../이미지/intro_meat2.png");
+transition: width 0.4s;
+overflow: hidden;
+z-index: 2;
 }
 
 .card .additional3 {
-  position: absolute;
-  width: 30vw;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../이미지/intro_meat3.png");
-  transition: width 0.4s;
-  overflow: hidden;
-  z-index: 2;
+position: absolute;
+width: 30vw;
+height: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+background-image: url("../이미지/intro_meat3.png");
+transition: width 0.4s;
+overflow: hidden;
+z-index: 2;
 }
 
 .card .additional4 {
-  position: absolute;
-  width: 30vw;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../이미지/intro_meat4.png");
-  transition: width 0.4s;
-  overflow: hidden;
-  z-index: 2;
+position: absolute;
+width: 30vw;
+height: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+background-image: url("../이미지/intro_meat4.png");
+transition: width 0.4s;
+overflow: hidden;
+z-index: 2;
 }
 
 /*intro 아래 내용*/
 .intro_main_img{
-  display: grid;
-  grid-template-columns: 40% 70%;
+display: grid;
+grid-template-columns: 40% 70%;
 }
 
 .intro_main_img2{
-  display: grid;
-  grid-template-columns:  40% 60%;
+display: grid;
+grid-template-columns:  40% 60%;
 }
 
 .intro_main1{
-  max-width: 50vw;
+max-width: 50vw;
 }
 
 .intro_main2{
-  max-width: 50vw;
-  order: 2;
+max-width: 50vw;
+order: 2;
 }
 
 .parent{
-  display: inline;
-  margin-left: 20vw;
-  max-width: 50vw;
+display: inline;
+margin-left: 20vw;
+max-width: 50vw;
 }
 .intro_div{
-  max-width: 100%;
-  float: right;
+max-width: 100%;
+float: right;
 }
 
 .intro_main_t1{
   margin-top: 40px;
-  font-size: 2rem;
+  font-size: 3.3vw;
+  font-weight: 900;
 }
 
-.intro_main_t1_2{
-  font-size: 1rem;
-  margin-top: -120px;
-}
 
 .intro_main_t2{
-  font-size: 0.8rem;
+  font-size: 0.1vw;
   margin-bottom: 15px;
 }
- .footer {
-    width: 100%; /* 넓이를 100%로 채우기 반응형 */
-    background-color: white;
-    padding: 10px;
+.footer {
+  width: 100%; /* 넓이를 100%로 채우기 반응형 */
+  background-color: white;
+  padding: 10px;
 }
 
 .footer .col h1 {
-  font-size: 5px;
-  line-height: 5px;
-  padding: 20px 0px 5px 0px;
-  color: #000;
-  /* footer 소제목 글씨 모양 */
-  text-transform: uppercase;
-  letter-spacing: 0.25em;
+font-size: 5px;
+line-height: 5px;
+padding: 20px 0px 5px 0px;
+color: #000;
+/* footer 소제목 글씨 모양 */
+text-transform: uppercase;
+letter-spacing: 0.25em;
 }
 
 .footer .col ul li {
-  color: #000;
-  font-size: 2px;
-  /*글자사이의 간격*/
-  padding: 0px 0px 4px 0px; 
-  cursor: pointer; /*cursor 마우스 커서 모양 뜨기 */
-  /*마우스 커서 시 색상 변하는 속도 조절 */
-  transition: 0.2s; 
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
+color: #000;
+font-size: 2px;
+/*글자사이의 간격*/
+padding: 0px 0px 4px 0px; 
+cursor: pointer; /*cursor 마우스 커서 모양 뜨기 */
+/*마우스 커서 시 색상 변하는 속도 조절 */
+transition: 0.2s; 
+-webkit-transition: 0.2s;
+-moz-transition: 0.2s;
 }
 
 .contain{
-  gap: 20px;
+gap: 20px;
 }
 
 .first-img{
-  height: 40vw;
-  width: 100%;
-  background: linear-gradient( rgba(0, 0, 0, 0.484), rgba(0, 0, 0, 0.516) ),
-    url("../이미지/introimg.jpg");
-    background-size: cover;
+height: 40vw;
+width: 100%;
+background: linear-gradient( rgba(0, 0, 0, 0.484), rgba(0, 0, 0, 0.516) ),
+  url("../이미지/introimg.jpg");
+  background-size: cover;
 }
 
 .intro-text > pre{
-  margin-right: 40px;
-    color: #fff;
-    font-weight: 500;
-    font-family: 'Noto Sans KR', sans-serif;
-    text-overflow : ellipsis
+margin-right: 40px;
+  color: #fff;
+  font-weight: 500;
+  font-family: 'Noto Sans KR', sans-serif;
+  text-overflow : ellipsis
 }
 }

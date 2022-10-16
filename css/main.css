@@ -133,5 +133,31 @@ nav a {
         height: 176px;
         width: 100%;
     }
+    .footer {
+        width: 100%; /* 넓이를 100%로 채우기 반응형 */
+        background-color: white;
+        padding: 10px;
+    }
+    
+    .footer .col h1 {
+      font-size: 5px;
+      line-height: 5px;
+      padding: 20px 0px 5px 0px;
+      color: #000;
+      /* footer 소제목 글씨 모양 */
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+    }
+    
+    .footer .col ul li {
+      color: #000;
+      font-size: 2px;
+      /*글자사이의 간격*/
+      padding: 0px 0px 4px 0px; 
+      cursor: pointer; /*cursor 마우스 커서 모양 뜨기 */
+      /*마우스 커서 시 색상 변하는 속도 조절 */
+      transition: 0.2s; 
+      -webkit-transition: 0.2s;
+      -moz-transition: 0.2s;
+    }
 }
-

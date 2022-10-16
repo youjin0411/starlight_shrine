@@ -1,6 +1,6 @@
 .first-img{
   width:100%;
-  height: 600px;
+  height:32vw;
   background: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0) 10%,
@@ -11,6 +11,13 @@
       rgba(255, 255, 255, 1) 100%
     ),
     url("../img/Mask group.png");
+    background-size: cover;
+}
+.nav-list{
+  z-index: 999999999999;
+}
+header{
+  z-index: 999999999999;
 }
 .in-img{
   width:100%;
@@ -19,13 +26,16 @@
 }
 
 .first-img-text{
-    padding-left: 330px;
-    padding-top: 400px;
+  font-size: 2.3vw;
+  font-weight: 900;
+    padding-left: 14.5%;
+    padding-top: 21%;
     position:relative;
 }
+
 .blank{
     width: 100%;
-    height:100px;
+    height:13vw;
      
 }
 .content{
@@ -33,11 +43,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: -5000000000;
 }
 
 .video{
-    width:75%;
-    height:700px;
+    width:70%;
     overflow: hidden;
 }
 video{
@@ -45,11 +55,14 @@ video{
 }
 .blank-2{
     width: 100%;
-    height:200px;
+    height:20vw;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+.blank-2-text{
+  font-size: 2vw;
 }
 .img-wrap{
     width:80vw;
@@ -62,13 +75,12 @@ video{
     width:17vw;
     height:30vw;
     border-radius: 20px;
-    background-color: aquamarine;
     position: relative;
     overflow: hidden;
     box-shadow: 3px 3px 12px #999;
 }
 .inner1{
-  background-image: url("../img/home-img-list/Rectangle 36.png");
+  background-image: url("../img/home-img-list/Rectangle\ 36.png");
   background-size: cover;
 }
 .inner2{
@@ -214,3 +226,29 @@ video{
   .clearfix {
     clear: both;
   }
+
+  @media screen and (max-width: 680px){
+    .map-content{
+      height:fit-content;
+      display: block;
+      justify-content: center;
+    }
+    .map{
+      padding: 0;
+      /* margin-left:3%; */
+      align-items: center;
+    }
+    .map-text{
+      padding: 2vw 0 5vw 0;
+      height: fit-content;
+    }
+    .content{
+      height:fit-content;
+    }
+    .map>iframe{
+      width:60vw;
+      height:60vw;
+  }
+  .
+
+}

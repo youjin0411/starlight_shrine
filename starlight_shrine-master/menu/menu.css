@@ -2,14 +2,26 @@ body{
     width: 100%;
     height:100%;
 }
+p{
+    font-size: 1vw;
+}
+h3{
+    font-size: 1.3vw;
+}
+h4{
+    font-size: 1vw;
+}
+h2{
+    font-size: 1.5vw;
+}
 .content{
     height:100%;
     display: flex;
     align-items: center;
     flex-direction: column;
+
 }
 .sig-menu, .add-menu{
-    width:80%;
 }
 .sig-menu>h1, .add-menu>h1{
     text-align: center;
@@ -26,20 +38,23 @@ body{
     justify-content: space-between;
     padding:40px 0 20px 0;
 }
+
 .set-list{
+    display: flex;
     width: 23.5%;
-    height: 240px;
+    height: 12vw;
     border-radius: 15px;
     box-shadow: 0 0 10px #666;
+    margin-bottom: 1vw;
 }
 .set-list:hover{
     cursor:pointer;
 }
 .sig-menu-text-wrap{
-    width:340px;
-    height:fit-content;
+    width:100%;
     padding-bottom: 60px;;
     padding-left: 10px;
+    font-size: 1vw;
 }
 .sig-menu-text{
     display: flex;
@@ -50,12 +65,12 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:80%;
 }
 .naver-reservation-menu>h1{
     text-align: center;
     padding:30px 0 50px 0;
 }
+
 .grid-wrap{
     width: 100%;
     display: grid;
@@ -75,6 +90,7 @@ body{
     flex-direction: column;
     align-items: center;
     padding:30px 0 50px 0;
+    font-size: 1vw;
 }
 .grid-item-menu-text>p{
     text-align: center;
@@ -89,23 +105,23 @@ body{
     object-fit: cover;
 }
 .list-img1{
-    background-image: url("../img/set-menu/Mask group.jpg");
+    background-image: url("../../img/set-menu/Mask group.jpg");
     background-size:cover;
+    
 }
 .list-img2{
-    background-image: url("../img/set-menu/Mask group-1.jpg");
+    background-image: url("../../img/set-menu/Mask group-1.jpg");
     background-size:cover;
 }
 .list-img3{
-    background-image: url("../img/set-menu/Mask group-2.jpg");
+    background-image: url("../../img/set-menu/Mask group-2.jpg");
     background-size:cover;
 }
 .list-img4{
-    background-image: url("../img/set-menu/Mask group-3.jpg");
+    background-image: url("../../img/set-menu/Mask group-3.jpg");
     background-size:cover;
 }
 .add-menu{
-    width: 80%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);  
     justify-items: left;
@@ -123,7 +139,10 @@ body{
 .market-menu-item:nth-child(1){
     grid-row: span 3;
 }
-
+.add-menu{
+    justify-content: center;
+    justify-items: center;
+}
 /* footer */
 .footer {
     width: 100%; /* 넓이를 100%로 채우기 반응형 */
@@ -199,5 +218,47 @@ body{
   .clearfix {
     clear: both;
   }
-
-  
+  @media screen and (max-width: 700px){
+    /* .sig-menu-img{
+        justify-content: center;
+    }
+    .sig-menu-img-wrap{
+        width:50%;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .set-list{
+        width: 30%;
+        height: 240px;
+        border-radius: 15px;
+        box-shadow: 0 0 10px #666;
+    } */
+    .footer {
+        width: 100%; /* 넓이를 100%로 채우기 반응형 */
+        background-color: white;
+        padding: 10px;
+    }
+    
+    .footer .col h1 {
+      font-size: 5px;
+      line-height: 5px;
+      padding: 20px 0px 5px 0px;
+      color: #000;
+      /* footer 소제목 글씨 모양 */
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+    }
+    
+    .footer .col ul li {
+      color: #000;
+      font-size: 2px;
+      /*글자사이의 간격*/
+      padding: 0px 0px 4px 0px; 
+      cursor: pointer; /*cursor 마우스 커서 모양 뜨기 */
+      /*마우스 커서 시 색상 변하는 속도 조절 */
+      transition: 0.2s; 
+      -webkit-transition: 0.2s;
+      -moz-transition: 0.2s;
+    }
+  }

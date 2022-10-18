@@ -1,0 +1,136 @@
+    
+nav {
+    background-color: #000;
+    width: 100%;
+    height: 44px; /* nav글자 높이 */
+    /* 수평배열 */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* nav글자 중앙정렬 */
+}
+
+
+nav a {
+    color: #fff;
+    font-size: 0.8rem; /* 글자 크기*/
+}
+    
+.nav-toggle {
+    /* toggle버튼이 보이지 않도록  */
+    display: none;
+    /* visibility: hidden; */
+}
+
+.nav-toggle i{
+    color:#fff;
+}
+
+.nav-toggle {
+    /* toggle버튼이 보이지 않도록  */
+    display: none;
+    /* visibility: hidden; */
+}
+
+.nav-toggle i{
+    color:#fff;
+}
+
+.nav-list {
+    /* 수평배열 */
+    display: flex;
+    column-gap: 5rem; /* 12px = nav글자사이의 거리 */
+    margin-right: 100px;
+}
+
+.nav-link {
+    display: block; /* a 태그가 한 줄 전체를 차지해서 링크가 동작하도록... */
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.nav-list .nav-link:hover {
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    background-size: cover;
+    border-radius: 0.5rem;
+}
+
+.nav-list .nav-item:nth-child(4){
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    border-radius: 0.5rem;
+}
+
+.nav-item:nth-child(4) .nav-link{
+  color: black;
+}   
+header{
+    border: solid rgb(117, 116, 116);
+} 
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    .loginBox {
+        position: relative;
+        top: 180px;
+        width: 348px;
+        height: 368px;
+        margin:0 auto;
+        border: 1px solid #dbdbdb;
+        text-align: center;
+        background-color: white;
+    }
+
+    #idInput, #pwInput {
+        width: 268px;
+        height: 38px;
+        border: 1px solid ;
+        margin-bottom: 6px;
+        padding-top: 8px;
+        padding-bottom: 7px;
+        padding-left: 10px;
+        border: 1px solid #dbdbdb;
+        border-radius: 3px;
+        background-color: #fafafa;
+    }
+
+    #idInput, #pwInput:focus {
+        outline: none;
+    }
+
+    ::placeholder {
+        font-size: 10pt;
+    }
+
+    .loginGo {
+        width: 268px;
+        height: 38px;
+        padding-top: 10px;
+        padding-bottom: 7px;
+        padding-left: 8px;
+        /* margin-left: 38px;/ */
+        color: white;
+        background-color: #b9def7;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .pwForgot {
+        display: block;
+        top: 50px;
+        margin-top: 12px;
+        color: #00376b;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        text-decoration-line: none;
+        cursor: pointer;
+    }

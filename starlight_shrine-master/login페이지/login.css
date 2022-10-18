@@ -9,10 +9,10 @@ nav {
     align-items: center; /* nav글자 중앙정렬 */
 }
 
-
-nav a {
+.nav a {
     color: #fff;
     font-size: 0.8rem; /* 글자 크기*/
+    text-decoration: none;
 }
     
 .nav-toggle {

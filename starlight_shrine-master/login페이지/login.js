@@ -1,7 +1,7 @@
 // 로그인 인풋값에 값이 있을시 색상 변환
     const idInput = document.getElementById('idInput');
     const pwInput = document.getElementById('pwInput');
-    const loginBtn = document.getElementsByClassName('loginGo')[0];
+    const loginBtn = document.getElementsByClassName('loginGo1')[0];
 
     // 로그인 버튼 클릭 이벤트 & 유효성 검사 이벤트
     function loginBtnClick() {
@@ -20,15 +20,15 @@
     function inputKeyboardEvent() {
         // id값과 pw값이 있으면 버튼 활성화
         if (idInput.value.length > 0 && pwInput.value.length > 0) {
-            loginBtn.style.backgroundColor = "#0095f6";
+            loginBtn.style.backgroundColor = "#353636";
         }
         // id값은 없지만, pw값이 있으면 버튼 비활성화
         if (idInput.value.length == 0 && pwInput.value.length > 0) {
-            loginBtn.style.backgroundColor = "#b9def7";
+            loginBtn.style.backgroundColor = "#a1a1a1";
         }
         // id값은 있지만, pw값이 없으면 버튼 비활성화
         if (idInput.value.length > 0 && pwInput.value.length == 0) {
-            loginBtn.style.backgroundColor = "#b9def7";
+            loginBtn.style.backgroundColor = "#a1a1a1";
         }
         
     }

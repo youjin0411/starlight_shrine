@@ -1,16 +1,16 @@
+const idInput = document.getElementById('idInput');
+const pwInput = document.getElementById('pwInput');
+
 var express = require('express');
 var cookieParser = require('cookie-parser');
 var app = express();
 app.use(cookieParser());
+
 app.get('/login', function(req, res){
-    if(req.cookies.login){
-        var login = rep.cookies.login;
-    }else{
-        var login = 0;
-    }
-    login = login + 1;
-    res.cookie(login);
-    res.send('login : ' + login);
+    loginid = idInput;
+    loginps = pwInput;
+    res.cookie(loginid, loginps);
+    res.send('login : ' + loginid);
 });
 
 app.listen(8888, function(){
